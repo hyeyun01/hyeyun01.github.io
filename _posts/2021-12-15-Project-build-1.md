@@ -8,10 +8,15 @@ toc:  true
 ---
 **2021-2학기 유레카프로젝트**
 {: .message }
+
+
 >Git Blog Project Build Process(1) - Make Git Blog.
+
 
 처음으로 Git Blog를 만들어보았다.
 이전까지 [Tistory](https://yuni01.tistory.com/)를 사용하며 Git Blog를 만들고 싶다고만 생각하다가 수업이라는 기회를 통해 블로그를 만들었고, 블로그 만드는 과정과 테마 적용, 글을 올리는 과정을 포스팅 하려고 한다.
+
+
 
 
 ## Make Git Blog Link !
@@ -30,8 +35,10 @@ Git Bash에서 다음 코드를 수행한다.
 
 {% highlight js %}
 $ cd [directory(레포지토리 저장할 위치)]
-$ git clone [복사한 링크 (마우스를 이용해 붙여넣기, ctrl+v 사용 X)]
+$ git clone [복사한 링크]
 {% endhighlight %}
+
+
 
 
 ## Apply the Theme
@@ -42,9 +49,9 @@ Jekyll에서 원하는 테마를 가져와서 수정하는 방법을 선택했�
 레포지토리 폴더 내에 압축을 풀어 파일을 넣어준다.
 
 {% highlight js %}
-$ cd [directory (똑같이 따라왔다면 [username].github.io 폴더 일 것임)]
+$ cd [directory ([username].github.io 폴더)]
 $ git add .
-$ git commit -m '(ex)new theme(원하는 메세지를 입력하면 된다)'
+$ git commit -m '(ex)new theme(원하는 메세지)'
 $ git push origin master
 {% endhighlight %}
 
@@ -54,13 +61,14 @@ Github에 파일이 연동되도록 commit 해준 것이다.
 
 ## Edit the Code
 
-제일 먼저 해줬던 일은 '_config.yml' 수정하기 이다.
+내가 제일 먼저 해줬던 일은 '_config.yml' 수정하기 이다.
+
+<img width="314" alt="KakaoTalk_20211215_195840045" src="https://user-images.githubusercontent.com/77826769/146175970-07981c1f-c23a-4758-827e-e0fae63d54fe.png">
 
 
-![image]("https://user-images.githubusercontent.com/77826769/146174626-35cebdeb-ac7f-4496-9cfd-657aa927e349.png")
-
-여기서 블로그 이름, 소개, 아이콘 사진 및 배경 사진을 _config.yml 파일에서 수정했다.
+여기서 보이는 블로그 이름, 소개, 아이콘 사진 및 배경 사진이 다 _config.yml 파일에서 수정한 것이다.
 
 visual code를 이용해 한 파일씩 열어보면서 코드가 어떤 의미인지 파악하고 디렉토리에 사진을 배치하고 불러오는 식으로 하면 된다.
 
 그 방법으로 아이콘을 수정하고, 내 이메일과 SNS 링크도 업로드할 수 있었다.
+
