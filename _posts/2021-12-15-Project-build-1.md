@@ -7,161 +7,60 @@ tags: [tutorial]
 toc:  true
 ---
 **2021-2학기 유레카프로젝트**
-Git Blog Project Build Process(1) - Make Git Blog.
 {: .message }
+>Git Blog Project Build Process(1) - Make Git Blog.
 
 처음으로 Git Blog를 만들어보았다.
 이전까지 [Tistory](https://yuni01.tistory.com/)를 사용하며 Git Blog를 만들고 싶다고만 생각하다가 수업이라는 기회를 통해 블로그를 만들었고, 블로그 만드는 과정과 테마 적용, 글을 올리는 과정을 포스팅 하려고 한다.
 
-![placeholder](http://placehold.it/400x200 "Medium example image")
 
 ## Make Git Blog Link !
 
-우선 본인의 git 계정이 필요하다. 
+우선 본인의 git 계정이 필요하다.
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- <mark>To highlight</mark>, use `<mark>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Mark Otto</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+<img width="703" alt="KakaoTalk_20211215_191609143" src="https://user-images.githubusercontent.com/77826769/146168232-56b9f92b-7d01-40da-a3ce-12fffaf0399d.png">{: .align-center}
 
-Most of these elements are styled by browsers with few modifications on our part.
+[username].github.io 라는 이름으로 repository를 하나 만들어준다.
 
-## Footnotes
+Clone에서 https 링크를 복사한다.
 
-Footnotes are supported as part of the Markdown syntax. Here's one in action. Clicking this number[^fn-sample_footnote] will lead you to a footnote. The syntax looks like:
+Git Bash에서 다음 코드를 수행한다.
+(오류 발생시 cd 명령어를 이용해 directory를 적절히 조정해준다 / cd .. : 상위 디렉토리로 이동)
 
-{% highlight text %}
-Clicking this number[^fn-sample_footnote]
-{% endhighlight %}
-
-Each footnote needs the `^fn-` prefix and a unique ID to be referenced for the footnoted content. The syntax for that list looks something like this:
-
-{% highlight text %}
-[^fn-sample_footnote]: Handy! Now click the return link to go back.
-{% endhighlight %}
-
-You can place the footnoted content wherever you like. Markdown parsers should properly place it at the bottom of the post.
-
-## Heading
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-### Code
-
-Inline code is available with the `<code>` element. Snippets of multiple lines of code are supported through Rouge. Longer lines will automatically scroll horizontally when needed. You may also use code fencing (triple backticks) for rendering code.
 
 {% highlight js %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
+$ cd [directory(레포지토리 저장할 위치)]
+$ git clone [복사한 링크 (마우스를 이용해 붙여넣기, ctrl+v 사용 X)]
 {% endhighlight %}
 
-You may also optionally show code snippets with line numbers. Add `linenos` to the Rouge tags.
 
-{% highlight js linenos %}
-// Example can be run directly in your JavaScript console
+## Apply the Theme
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+Jekyll에서 원하는 테마를 가져와서 수정하는 방법을 선택했다.
+[http://jekyllthemes.org/](http://jekyllthemes.org/)에서 마음에 드는 테마의 소스코드 파일을 다운로드 한다.
 
-// Call the function
-adder(2, 6);
-// > 8
+레포지토리 폴더 내에 압축을 풀어 파일을 넣어준다.
+
+{% highlight js %}
+$ cd [directory (똑같이 따라왔다면 [username].github.io 폴더 일 것임)]
+$ git add .
+$ git commit -m '(ex)new theme(원하는 메세지를 입력하면 된다)'
+$ git push origin master
 {% endhighlight %}
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+Git Bash에서 해당 코드를 입력해주면
+Github에 파일이 연동되도록 commit 해준 것이다.
 
-### Lists
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+## Edit the Code
 
-- Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-- Donec id elit non mi porta gravida at eget metus.
-- Nulla vitae elit libero, a pharetra augue.
+제일 먼저 해줬던 일은 '_config.yml' 수정하기 이다.
 
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
+![image]("https://user-images.githubusercontent.com/77826769/146174626-35cebdeb-ac7f-4496-9cfd-657aa927e349.png")
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+여기서 블로그 이름, 소개, 아이콘 사진 및 배경 사진을 _config.yml 파일에서 수정했다.
 
-<dl>
-  <dt>HyperText Markup Language (HTML)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
+visual code를 이용해 한 파일씩 열어보면서 코드가 어떤 의미인지 파악하고 디렉토리에 사진을 배치하고 불러오는 식으로 하면 된다.
 
-  <dt>Cascading Style Sheets (CSS)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
-
-  <dt>JavaScript (JS)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-### Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](http://placehold.it/800x400 "Large example image")
-![placeholder](http://placehold.it/400x200 "Medium example image")
-![placeholder](http://placehold.it/200x200 "Small example image")
-
-Align to the center by adding `class="align-center"`:
-
-![placeholder](http://placehold.it/400x200 "Medium example image"){: .align-center}
-
-### Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
------
-
-Want to see something else added? <a href="https://github.com/vszhub/not-pure-poole/issues/new">Open an issue.</a>
-
-[^fn-sample_footnote]: Handy! Now click the return link to go back.
+그 방법으로 아이콘을 수정하고, 내 이메일과 SNS 링크도 업로드할 수 있었다.
