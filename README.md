@@ -1,10 +1,9 @@
 # My Project Build course
+프로젝트 빌드과정은 포스트로 자세히 업로드 해두었습니다.
 
-1. 기존 GIT 계정에서 hyeyun.github.io 라는 리포지토리를 생성했다
-2. 테마를 다운 받아 압축을 풀고 hyeyun.github.io 폴더에 담는다
-3. 테마의 _config.yml 파일에서 이름과 email 주소, 소개 정보 등을 수정한다
-4. 게시글을 포스팅한다 (2021-12-15-first)
+## Project Build Process
 
+[(1)-Make Git Blog](https://hyeyun01.github.io/2021/12/12/Project-build-1/)
 
 ## License
 

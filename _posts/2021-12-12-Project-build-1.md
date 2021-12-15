@@ -3,6 +3,7 @@ layout: post
 title: Project Build Process(1)-Make Git Blog
 date: 2021-12-12 15:18 +0800
 last_modified_at: 2020-12-15 18:08:25 +0800
+Catrgories: [Git-Blog]
 tags: [tutorial]
 toc:  true
 ---
