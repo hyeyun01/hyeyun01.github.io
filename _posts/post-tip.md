@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First Post - blog start!
+title: 글쓰기에 필요한 기본 명령어들 모음
 date: 2020-09-29 23:18 +0800
 last_modified_at: 2020-10-01 01:08:25 +0800
 tags: [tutorial]
