@@ -18,7 +18,7 @@ toc:  true
 
 
 ## 참고
-https://present4n6.tistory.com/8?category=904222
+[https://present4n6.tistory.com/8?category=904222]https://present4n6.tistory.com/8?category=904222
 
 이 블로그를 참고해서 진행하면 똑같이 할 수 있다.
 나는 기본세팅으로 댓글이 달리게 설정해서 굳이 페이지 내에서 comment: true를 넣지 않아도 모든 게시글에 댓글 기능이 생긴 것을 확인해 볼 수 있었다.
