@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project Build Process(2) Use Ruby
-date: 2021-12-12 15:18 +0800
+date: 2021-12-15 15:18 +0800
 last_modified_at: 2020-12-15 18:08:25 +0800
 Catrgories: [Git-Blog]
 tags: [tutorial]
@@ -19,19 +19,9 @@ toc:  true
 
 
 
-## Make Git Blog Link !
+## Ruby 설치
 
-우선 본인의 git 계정이 필요하다.
-
-<img width="703" alt="KakaoTalk_20211215_191609143" src="https://user-images.githubusercontent.com/77826769/146168232-56b9f92b-7d01-40da-a3ce-12fffaf0399d.png">{: .align-center}
-
-[username].github.io 라는 이름으로 repository를 하나 만들어준다.
-
-Clone에서 https 링크를 복사한다.
-
-Git Bash에서 다음 코드를 수행한다.
-(오류 발생시 cd 명령어를 이용해 directory를 적절히 조정해준다 / cd .. : 상위 디렉토리로 이동)
-
+Ruby 공식 홈페이지에서 최신 버전의 Ruby를 다운 받으면 된다.
 
 {% highlight js %}
 $ cd [directory(레포지토리 저장할 위치)]
