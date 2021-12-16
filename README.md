@@ -2,8 +2,8 @@
 
 
 [(1) Make Git Blog](https://hyeyun01.github.io/2021/12/12/Project-build-1/)
-[(2) Use Ruby](https://hyeyun01.github.io/2021/12/12/Project-build-2/)
-[(3) 댓글 기능 추가하기]()
+[(2) Use Ruby](https://hyeyun01.github.io/2021/12/15/Project-build-2/)
+[(3) 댓글 기능 추가하기](https://hyeyun01.github.io/2021/12/16/Project_build-3/)
 [(4) Favicon 만들기](https://hyeyun01.github.io/2021/12/15/favicon/)
 
 
