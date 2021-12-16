@@ -23,42 +23,27 @@ toc:  true
 
 Ruby 공식 홈페이지에서 최신 버전의 Ruby를 다운 받으면 된다.
 
+
+## Ruby on rails 설치
+
+cmd 창에서
+
 {% highlight js %}
-$ cd [directory(레포지토리 저장할 위치)]
-$ git clone [복사한 링크]
+$ gem install rails
+$ rails -v
 {% endhighlight %}
 
 
+를 입력해 rails를 설치하고, 버전이 잘 뜨는지 확인해준다.
+
+<img width="169" alt="KakaoTalk_20211216_161841128" src="https://user-images.githubusercontent.com/77826769/146325591-2f69cd59-8178-44c2-b0ad-e46fbd868b09.png">
+
+잘 뜬다.
 
 
-## Apply the Theme
+## bundle exec jakyll serve
 
-Jekyll에서 원하는 테마를 가져와서 수정하는 방법을 선택했다.
-[http://jekyllthemes.org/](http://jekyllthemes.org/)에서 마음에 드는 테마의 소스코드 파일을 다운로드 한다.
-
-레포지토리 폴더 내에 압축을 풀어 파일을 넣어준다.
-
-{% highlight js %}
-$ cd [directory ([username].github.io 폴더)]
-$ git add .
-$ git commit -m '(ex)new theme(원하는 메세지)'
-$ git push origin master
-{% endhighlight %}
-
-Git Bash에서 해당 코드를 입력해주면
-Github에 파일이 연동되도록 commit 해준 것이다.
+<img width="447" alt="KakaoTalk_20211216_162528359" src="https://user-images.githubusercontent.com/77826769/146326628-2b1ee386-d3de-41f1-a7c8-13d510320f42.png">
 
 
-## Edit the Code
-
-내가 제일 먼저 해줬던 일은 '_config.yml' 수정하기 이다.
-
-<img width="314" alt="KakaoTalk_20211215_195840045" src="https://user-images.githubusercontent.com/77826769/146175970-07981c1f-c23a-4758-827e-e0fae63d54fe.png">
-
-
-여기서 보이는 블로그 이름, 소개, 아이콘 사진 및 배경 사진이 다 _config.yml 파일에서 수정한 것이다.
-
-visual code를 이용해 한 파일씩 열어보면서 코드가 어떤 의미인지 파악하고 디렉토리에 사진을 배치하고 불러오는 식으로 하면 된다.
-
-그 방법으로 아이콘을 수정하고, 내 이메일과 SNS 링크도 업로드할 수 있었다.
-
+이렇게 뜨는데 도저히 뭘 설치하고 업데이트해도 해결이 안된다...
