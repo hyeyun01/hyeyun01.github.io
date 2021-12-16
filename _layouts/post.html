@@ -26,9 +26,16 @@ layout: default
   </div>
 
   {{ content }}
+  {% if site.disqus.shortname %}
+     {%include disqus.html %}
+  {% endif %}
 
   {% if page.tags %}
     {% include post-tags.html %}
+  {% endif %}
+
+  {% if page.categories %}
+    {% include post-categories.html %}
   {% endif %}
 
   {% if jekyll.environment == "production" and site.disqus and page.comments != false %}
